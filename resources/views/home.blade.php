@@ -21,7 +21,8 @@
     <div>
         @foreach ($dealerships as $dealership)
         {{-- stampo i risultati --}}
-           {{$dealership}}
+
+           {{$dealership}}@if(!$loop->last) , @endif
         @endforeach
     </div>
 
