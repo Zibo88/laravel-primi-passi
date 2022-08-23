@@ -17,7 +17,15 @@
         <li>Anno di immatricolazione: {{$year}}</li>
     </ul>
 
-    
+    {{-- creo ciclo foreach per leggere l'interno dell'array --}}
+    <div>
+        @foreach ($dealerships as $dealership)
+        {{-- stampo i risultati --}}
+           {{$dealership}}
+        @endforeach
+    </div>
+
+
 
    
 

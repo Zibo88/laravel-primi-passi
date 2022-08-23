@@ -27,24 +27,26 @@ Bonus:
 Creiamo più di una pagina e visualizziamo un header menu con i link di tutte le pagine, utilizzando la funzione route()
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 
 Route::get('/home', function () {
     
     // creo la struttura dati da passare alla home
     $data = [
-
-        'name' => 'jaguar',
-        'model' => 'x-type',
-        'year' => '2005',
-        'dealerships' => ['Milano', 'Roma' , 'Napoli' , 'Palermo']
+        
+            'name' => 'jaguar',
+            'model' => 'x-type',
+            'year' => '2005',
+            'dealerships' => ['Milano', 'Roma' , 'Napoli' , 'Palermo']
+        
+        
     ];
 
     // aggiungo come prametro la variabile da cui estrapolare i dati
     return view('home', $data);
 });
+
+
+
+
 
 
