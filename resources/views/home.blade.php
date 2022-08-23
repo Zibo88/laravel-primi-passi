@@ -9,6 +9,9 @@
 <body>
     <h1>Benvenuto nella nostra concessionaria</h1>
     <div> ti presentiamo quest'auto</div>
-    <div>{{$name}}</div>
+    <li> Nome: {{$name}}</li>
+    <li>Modello: {{$model}}</li>
+    <li>Anno di immatricolazione: {{$year}}</li>
+
 </body>
 </html>
