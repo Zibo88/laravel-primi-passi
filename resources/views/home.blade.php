@@ -7,7 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Benvenuto nella nostra concessionaria</h1>
+
+    <header>
+        <h1>Benvenuto nella nostra concessionaria</h1>
+        <ul>
+            Vai a:
+            <li>
+                <a href="{{route ('friends')}}"> Friends </a>
+            </li>
+            <li>
+                <a href="{{route ('enemy')}}"> Enemy</a>
+            </li>
+        </ul>
+    </header>
+   
+    
     <div> ti presentiamo quest'auto</div>
 
     <ul>
