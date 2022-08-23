@@ -21,7 +21,7 @@
     <div>
         @foreach ($dealerships as $dealership)
         {{-- stampo i risultati --}}
-
+                                {{-- se non è l'ultimo elemento dell'array stampa la virgola --}}
            {{$dealership}}@if(!$loop->last) , @endif
         @endforeach
     </div>

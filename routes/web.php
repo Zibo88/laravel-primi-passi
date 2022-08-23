@@ -45,6 +45,21 @@ Route::get('/home', function () {
     return view('home', $data);
 });
 
+Route::get('/friends', function () {
+
+    $data = [
+
+        'class' => '3C',
+        'school' => 'G. Orwell',
+        'city' => 'Girona',
+        'myFriends' => ['anna', 'carla', 'marco' , 'giovanni']
+    ];
+    return view('friends', $data);
+});
+
+
+
+
 
 
 
