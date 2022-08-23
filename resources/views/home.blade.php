@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <h1>Benvenuto nella nostra concessionaria</h1>
+    <div> ti presentiamo quest'auto</div>
+    <div>{{$name}}</div>
 </body>
 </html>

@@ -33,7 +33,18 @@ Route::get('/', function () {
 
 
 Route::get('/home', function () {
-    return view('home');
+    
+    // creo la struttura dati da passare alla home
+    $data = [
+
+        'name' => 'jaguar',
+        'model' => 'x-type',
+        'year' => '2005',
+        'dealerships' => ['Milano', 'Roma' , 'Napoli' , 'Palermo']
+    ];
+
+    // aggiungo come prametro la variabile da cui estrapolare i dati
+    return view('home', $data);
 });
 
 
