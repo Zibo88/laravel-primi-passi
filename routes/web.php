@@ -43,7 +43,8 @@ Route::get('/home', function () {
 
     // aggiungo come prametro la variabile da cui estrapolare i dati
     return view('home', $data);
-});
+    // dando un nome alla route è possibile sfruttarlo come collegamento tra le pagine
+})->name('home');
 
 Route::get('/friends', function () {
 
@@ -55,7 +56,8 @@ Route::get('/friends', function () {
         'myFriends' => ['anna', 'carla', 'marco' , 'giovanni']
     ];
     return view('friends', $data);
-});
+        // dando un nome alla route è possibile sfruttarlo come collegamento tra le pagine
+})->name('friends');
 
 
 

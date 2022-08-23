@@ -22,7 +22,8 @@
         </ul>
     </div>
 
-    <a href="">vai alla home</a>
+    {{-- aggiunta di collegamento alla pagina home --}}
+    <a href="{{route ('home')}}">vai alla home</a>
 
 
 </body>
