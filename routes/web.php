@@ -59,6 +59,15 @@ Route::get('/friends', function () {
         // dando un nome alla route è possibile sfruttarlo come collegamento tra le pagine
 })->name('friends');
 
+Route::get('/enemy', function () {
+
+    $data = [
+
+        'myEnemy' => ['luca', 'andrea', 'pippo', 'pluto']   
+    ];
+    return view('enemy', $data);
+})->name('enemy');
+
 
 
 
